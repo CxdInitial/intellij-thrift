@@ -4,6 +4,7 @@ import com.intellij.lang.Language;
 import com.intellij.plugins.thrift.ThriftLanguage;
 import com.intellij.psi.codeStyle.CodeStyleSettings;
 import com.intellij.psi.codeStyle.CodeStyleSettingsCustomizable;
+import com.intellij.psi.codeStyle.CodeStyleSettingsCustomizableOptions;
 import com.intellij.psi.codeStyle.CustomCodeStyleSettings;
 import com.intellij.psi.codeStyle.LanguageCodeStyleSettingsProvider;
 import org.jetbrains.annotations.NotNull;
@@ -27,40 +28,40 @@ public class ThriftLanguageCodeStyleSettingsProvider extends LanguageCodeStyleSe
           ThriftCodeStyleSettings.class,
           "CURLY_BLOCK_WRAP",
           "Curly blocks",
-          CodeStyleSettingsCustomizable.WRAPPING_BRACES,
-          CodeStyleSettingsCustomizable.WRAP_OPTIONS,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAPPING_BRACES,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAP_OPTIONS,
           CodeStyleSettingsCustomizable.WRAP_VALUES
       );
       consumer.showCustomOption(
           ThriftCodeStyleSettings.class,
           "THROWS_WRAP",
           "Throws block",
-          CodeStyleSettingsCustomizable.WRAPPING_BRACES,
-          CodeStyleSettingsCustomizable.WRAP_OPTIONS,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAPPING_BRACES,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAP_OPTIONS,
           CodeStyleSettingsCustomizable.WRAP_VALUES
       );
       consumer.showCustomOption(
           ThriftCodeStyleSettings.class,
           "FUNCTION_ARGUMENTS_WRAP",
           "Function arguments",
-          CodeStyleSettingsCustomizable.WRAPPING_BRACES,
-          CodeStyleSettingsCustomizable.WRAP_OPTIONS,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAPPING_BRACES,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAP_OPTIONS,
           CodeStyleSettingsCustomizable.WRAP_VALUES
       );
       consumer.showCustomOption(
           ThriftCodeStyleSettings.class,
           "ANNOTATION_WRAP",
           "Annotations",
-          CodeStyleSettingsCustomizable.WRAPPING_BRACES,
-          CodeStyleSettingsCustomizable.WRAP_OPTIONS,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAPPING_BRACES,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAP_OPTIONS,
           CodeStyleSettingsCustomizable.WRAP_VALUES
       );
       consumer.showCustomOption(
           ThriftCodeStyleSettings.class,
           "CONST_LIST_WRAP",
           "Const list",
-          CodeStyleSettingsCustomizable.WRAPPING_BRACES,
-          CodeStyleSettingsCustomizable.WRAP_OPTIONS,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAPPING_BRACES,
+          CodeStyleSettingsCustomizableOptions.getInstance().WRAP_OPTIONS,
           CodeStyleSettingsCustomizable.WRAP_VALUES
       );
     }
